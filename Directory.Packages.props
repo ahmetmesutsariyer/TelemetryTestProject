@@ -1,0 +1,20 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The production API's pins, version for version. -->
+    <PackageVersion Include="Microsoft.OpenTelemetry" Version="1.1.0" />
+    <PackageVersion Include="OpenTelemetry.Extensions.Hosting" Version="1.18.0" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.18.0" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.Runtime" Version="1.18.0" />
+    <PackageVersion Include="Serilog.AspNetCore" Version="10.0.0" />
+
+    <!--
+      The control variant: the Azure Monitor package the distro is built on. It resolves the same exporter the distro
+      brings (Azure.Monitor.OpenTelemetry.Exporter 1.9.0), so the code that writes the wire is the same in every
+      variant and the distro's layer is the only difference.
+    -->
+    <PackageVersion Include="Azure.Monitor.OpenTelemetry.AspNetCore" Version="1.6.0" />
+  </ItemGroup>
+</Project>

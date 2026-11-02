@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "distro": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5101",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=00000000-0000-0000-0000-000000000000;IngestionEndpoint=http://localhost:5901/;LiveEndpoint=http://localhost:5901/",
+        "APPLICATIONINSIGHTS_STATSBEAT_DISABLED": "true",
+        "APPLICATIONINSIGHTS_SDKSTATS_DISABLED": "true",
+        "Lab__Variant": "Distro"
+      }
+    },
+    "control": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5102",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=00000000-0000-0000-0000-000000000000;IngestionEndpoint=http://localhost:5902/;LiveEndpoint=http://localhost:5902/",
+        "APPLICATIONINSIGHTS_STATSBEAT_DISABLED": "true",
+        "APPLICATIONINSIGHTS_SDKSTATS_DISABLED": "true",
+        "Lab__Variant": "Control"
+      }
+    },
+    "fixed": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5103",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=00000000-0000-0000-0000-000000000000;IngestionEndpoint=http://localhost:5903/;LiveEndpoint=http://localhost:5903/",
+        "APPLICATIONINSIGHTS_STATSBEAT_DISABLED": "true",
+        "APPLICATIONINSIGHTS_SDKSTATS_DISABLED": "true",
+        "Lab__Variant": "Fixed"
+      }
+    }
+  }
+}
